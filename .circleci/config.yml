@@ -126,6 +126,9 @@ jobs:
             npm audit fix --audit-level=critical --force
             npm audit fix --audit-level=critical --force
             exit 1
+      - slack/notify:
+          event: fail
+          templte: basic_fail_1
 
   # deploy-infrastructure:
   #   docker:
