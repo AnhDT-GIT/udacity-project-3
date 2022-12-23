@@ -182,7 +182,8 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            apk add --update --no-cache tar gzip ansible aws-cli
+            apk add --update ansible
+            apk --no-cache add curl
       - attach_workspace:
           at: ~/
       - run:
