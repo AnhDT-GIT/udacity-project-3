@@ -225,9 +225,9 @@ jobs:
           event: fail
           template: basic_fail_1
       - destroy-environment:
-          workflowId: "${CIRCLE_WORKFLOW_ID:0:7}"  
+          workflowid: "${CIRCLE_WORKFLOW_ID:0:7}"  
       - revert-migrations:
-          workflowId: "${CIRCLE_WORKFLOW_ID:0:7}"
+          workflowid: "${CIRCLE_WORKFLOW_ID:0:7}"
 
   # deploy-frontend:
   #   docker:
